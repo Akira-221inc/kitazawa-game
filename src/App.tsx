@@ -2,7 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import StartScreen from './StartScreen';
+import StartScene from './StartScene';
 import ExplanationScene from './ExplanationScene';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   if (scene === 'start') {
-    return <StartScreen onStart={() => setScene('explanation')} />;
+  return <StartScene onStart={() => setScene('explanation')} />;
   }
   if (scene === 'explanation') {
     return <ExplanationScene onNext={() => setScene('main')} />;

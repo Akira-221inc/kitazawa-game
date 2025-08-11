@@ -1,10 +1,10 @@
 import React from "react";
 
-interface StartScreenProps {
+interface StartSceneProps {
   onStart: () => void;
 }
 
-const StartScreen: React.FC<StartScreenProps> = ({ onStart }) => {
+const StartScene: React.FC<StartSceneProps> = ({ onStart }) => {
   return (
     <div style={{
       position: "fixed",
@@ -38,4 +38,4 @@ const StartScreen: React.FC<StartScreenProps> = ({ onStart }) => {
   );
 };
 
-export default StartScreen;
+export default StartScene;
